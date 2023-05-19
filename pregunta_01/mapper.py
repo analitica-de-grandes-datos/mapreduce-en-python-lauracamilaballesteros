@@ -7,4 +7,4 @@ if __name__ == "__main__":
         columnas = linea.split(",")
         columna_credit = columnas[2]
         sys.stdout.write(f"{columna_credit}\n")
-       
+#
