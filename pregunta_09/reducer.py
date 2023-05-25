@@ -24,7 +24,7 @@ if __name__ == "__main__":
     dictionary_sort = sorted(dictionary.items())
     
     for num, (letter, date) in dictionary_sort:
-        sys.stdout.write(f"{letter}\t{date}\t{num}\n")
+        sys.stdout.write(f"{letter}   {date}   {num}\n")
         count += 1
         if count == 6:
             break
