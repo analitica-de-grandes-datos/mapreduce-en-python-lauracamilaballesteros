@@ -22,5 +22,5 @@ if __name__ == "__main__":
     
     for letter, values in dictionary_sort:
         values_str = ",".join(values)  
-        sys.stdout.write(f"{letter}\t{values_str}\n")
+        sys.stdout.write(f" {letter}\t{values_str}\n")
         #
