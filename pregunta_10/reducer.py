@@ -23,3 +23,4 @@ if __name__ == "__main__":
     for letter, values in dictionary_sort:
         values_str = ",".join(values)  
         sys.stdout.write(f"{letter} {values_str}\n")
+        #
