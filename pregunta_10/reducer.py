@@ -3,6 +3,8 @@
 #
 import sys
 
+import sys
+
 if __name__ == "__main__":
     dictionary = {}
     
@@ -14,13 +16,14 @@ if __name__ == "__main__":
             
             for letter in letters:
                 if letter in dictionary:
-                    dictionary[letter].append(num)
+                    dictionary[letter].append(int(num))
                 else:
-                    dictionary[letter] = [num]
+                    dictionary[letter] = [int(num)]
 
     dictionary_sort = sorted(dictionary.items(), key=lambda x: x[0])
     
     for letter, values in dictionary_sort:
-        values_str = ",".join(values)  
-        sys.stdout.write(f" {letter}\t{values_str}\n")
+        values_sorted = sorted(values)
+        values_str = ",".join(str(num) for num in values_sorted)
+        sys.stdout.write(f"{letter}\t{values_str}\n")
         #
